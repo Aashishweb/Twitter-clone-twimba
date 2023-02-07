@@ -35,7 +35,6 @@ function handleRetweetClick(tweetId) {
   })[0];
 
   if (targetTweetObj.isRetweeted) {
-    console.log(targetTweetObj.retweets);
     targetTweetObj.retweets--;
   } else {
     targetTweetObj.retweets++;

@@ -107,6 +107,15 @@ button {
   width: 80%;
 }
 
+.tweet-close {
+  font-size: 20px;
+}
+
+.tweet-close:hover {
+  color: red;
+  cursor: pointer;
+}
+
 .handle {
   font-size: 12px;
   font-weight: 500;

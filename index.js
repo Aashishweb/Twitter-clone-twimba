@@ -47,8 +47,12 @@ function handleReplyClick(replyId) {
   document.getElementById(`replies-${replyId}`).classList.toggle("hidden");
 }
 
-function handleCloseClick() {
-  tweetsData.shift();
+function handleCloseClick(tweetId) {
+  tweetsData.forEach(function (tweet) {
+    if (tweet.uuid === tweetId) {
+      tweetsData.splice(tweetsData.indexOf(tweet), 1);
+    }
+  });
   render();
 }
 
